@@ -345,6 +345,20 @@ header {
     margin-top: 20px;
   }
 
+
+    /* links in footer */
+    h4 a {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        color: darkgreen;
+    }
+
+    h4 a:hover {
+        color: darkgoldenrod;
+        transform: scale(1.5);    /* Grows the text slightly on hover */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth */
+    }
+
+    /* grey color background */
   .colored-section {
     background-color:  rgba(211, 211, 211, 0.5);
     min-height: 550px;
