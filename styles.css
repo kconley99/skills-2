@@ -49,11 +49,11 @@ header {
 /* top of the page container / image and text side by side */
 .intro-container {
     display: flex;
-    flex-direction: row-reverse;
     padding: 10px;
     background-color: rgba(211, 211, 211, 0.5);
     justify-content: space-evenly;
     gap: 30px;
+    flex-grow: 1;
 }
 
 .plant-intro {
@@ -117,6 +117,7 @@ header {
     background-color: goldenrod;
 }
 
+/* about page */
 /* about section/ keeps h2 out of container */
 .seperate {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -132,12 +133,91 @@ header {
     gap: 20px;
 }
 
+#greenhouse-img {
+    max-width: 100%;
+    border: 2px outset rgba(154, 205, 50, 0.8);
+    border-radius: 5px;
+}
+
+.plant-intro h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 24px;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 50px;
+    line-height: 2;
+    text-shadow: 1px 1px white;
+}
+
+.green-spaced-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: darkgreen;
+    font-size: 18px;
+    text-align: center;
+    margin: 50px;
+    line-height: 2;
+}
+
+/* /* sizing image on about page */
+#about-plants {
+    height: 400px;
+    width: 575px;
+    border: 2px outset rgba(154, 205, 50, 0.8);
+    border-radius: 5px;
+}
+
+.plant-intro h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+/* green text */
+.green {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: darkgreen;
+    text-align: center;
+    margin-top: 75px;
+}
+
+/* plants page */
+#plants-plant {
+    border: 2px outset rgba(154, 205, 50, 0.8);
+    border-radius: 5px;
+    height: 500px;
+    width: 600px;
+}
+
+.plants-txt-container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.plants-txt {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: darkgreen;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 5px 25px;
+}
+
+/* stat boxes */
 .stat-box {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
     font-size: 26px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .stat-box button {
@@ -211,6 +291,44 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth */
   }
 
+/* plants page */
+  .plants-container {
+    display: flex;              /* Enables Flexbox layout */
+    flex-wrap: wrap;            /* Allows items to wrap to the next row */
+    justify-content: center;    /* Centers items horizontally */
+    gap: .5rem;                  /* Adds space between items */
+    max-width: 1200px;          /* Optional: keeps gallery from stretching too wide */
+    margin: auto;          /* Centers the gallery on the page */
+  }
+
+  .plant {
+    flex: 1 1 300px;
+
+  /*
+    flex: 1 1 300px;
+
+    - flex-grow: 1
+      → Allows the item to grow and take up extra space 
+        (in proportion to other items with flex-grow set)
+
+    - flex-shrink: 1
+      → Allows the item to shrink if there's not enough space
+
+    - flex-basis: 300px
+      → This is the "starting" width the item will try to be before growing/shrinking
+
+    This combo means: 
+    "Try to be 300px wide, but shrink or grow if needed to fit the row."
+  */
+
+    max-width: 300px;          /* Prevents items from growing wider than 300px */
+  }
+
+.plant img {
+    height: 300px;
+    width: 400px;
+}
+
   /* footer */
   .footer-container {
     display: flex;
@@ -230,12 +348,5 @@ header {
   .colored-section {
     background-color:  rgba(211, 211, 211, 0.5);
     min-height: 550px;
+    max-width: 100%;
   }
-
-  /* sizing image on about page */
-  .about-plants {
-    width: 300px;
-    height: 200px;
-    border: 2px outset rgba(154, 205, 50, 0.8);
-    border-radius: 5px;
-}
