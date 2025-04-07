@@ -256,7 +256,7 @@ header {
 
 /* Each image wrapper */
 .partner {
-    flex: 1 1 300px;
+    flex: 1 1 180px;
   
     /*
       flex: 1 1 300px;
@@ -275,7 +275,7 @@ header {
       "Try to be 300px wide, but shrink or grow if needed to fit the row."
     */
   
-    max-width: 300px;          /* Prevents items from growing wider than 300px */
+    justify-content: space-evenly;
   }
   
   /* Makes the image fill its container */
@@ -283,6 +283,7 @@ header {
     display: block;            /* Removes space under image */
     border-radius: 8px;        /* Optional: rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto; /* centers in container */
   }
   
   /* Simple hover effect */
@@ -326,7 +327,6 @@ header {
 
 .plant img {
     height: 300px;
-    width: 400px;
 }
 
   /* footer */
@@ -364,3 +364,13 @@ header {
     min-height: 550px;
     max-width: 100%;
   }
+
+/* styles for screens wider than 950px */
+@media (min-width: 950px)
+    .intro-container {
+        width: 65%;
+    }
+
+    .home-buttons {
+        justify-content: flex-end;
+    }
