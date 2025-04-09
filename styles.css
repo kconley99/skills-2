@@ -401,9 +401,12 @@ header {
     }
 
     .nav-links {
-        justify-content: flex-start;
-        /*align-items: center;  aligns nav items */
-        margin: 15px -5px; /* stops nav li from extending container */
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .nav-links ul {
+        justify-content: center;
     }
 
     .intro-container {
