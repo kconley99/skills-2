@@ -380,6 +380,7 @@ header {
     .nav-links {
         width: 950px; /* makes container larger to fit screen */
         margin: 15px -40px; /* centers container */
+        justify-content: center; /* centers nav menu */
     }
 
     .intro-container {
@@ -399,8 +400,9 @@ header {
         gap: 0; /* removes space between stats */
     }
 
-    .nav-links li {
-        align-items: center; /* aligns nav items */
+    .nav-links {
+        justify-content: flex-start;
+        /*align-items: center;  aligns nav items */
         margin: 15px -5px; /* stops nav li from extending container */
     }
 
