@@ -380,7 +380,6 @@ header {
     .nav-links {
         width: 950px; /* makes container larger to fit screen */
         margin: 15px -40px; /* centers container */
-        justify-content: center; /* centers nav menu  */
     }
 
     .intro-container {
