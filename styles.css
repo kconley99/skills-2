@@ -378,10 +378,14 @@ header {
     }
 
     .nav-links {
-        width: 950px; /* makes container larger to fit screen */
-        margin: 15px -40px; /* centers container */
-        justify-content: center; /* centers nav menu */
+    justify-content: center;
     }
+
+
+    header {
+        justify-content: center; /*  centers nav menu  */
+        gap: 2rem;
+    }    
 
     .intro-container {
         text-align: center; /* centers text in container */
@@ -403,10 +407,7 @@ header {
     .nav-links {
         flex-direction: column;
         align-content: center;
-    }
-
-    .nav-links ul {
-        justify-content: center;
+        text-align: center;
     }
 
     .intro-container {
@@ -450,6 +451,7 @@ header {
 
     .partners-container {
         gap: .25rem; /* eliminates space after partners container */
+        margin: 45px; /* switches images to one column */
     }
 
     .home-buttons {
